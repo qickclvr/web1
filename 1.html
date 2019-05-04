@@ -1,25 +1,20 @@
-<!doctype html>
 <html>
-<head><title> 시험중 </title>
-<meta charset="utf-8">
-</head>
-
 <body>
-<h1> TESTING </h1>
-<br><strong> CSS : Cascading <u> Style </u> Sheets </strong>
-<h1><a href="http://qickclvr.tistory.com"> 노현 </a></h1>
-<<h2><a href="http://daum.net"> daum </a> </h2>
-<h3> <a href="http://naver.com"> naver  </a> </h3>
-<h4> <a href="http://google.com"> google </a> </h4>
-<h5> NH </h5>
-<h6> NH </h6>
-<ul>
-  <li>NOH hYUN </li>
-  <li>이주연 </li>
-  <li>NOH HARANG </li>
-  <li>NOH haNEUL </li>
-  <iframe width="854" height="480" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
-  </ul>
+<canvas id="canvas1" width="300" height="400"> </canvas>
+<script type="text/javascript">
+// canvas 요소의 DOM 객체 생성
+     var canvas = document.getElementById("canvas1");
+// 그리기 컨텍스트 생성
+     var cx = canvas.getContext("2d");
+
+     //이미지 삽입
+     var image = new Image();
+     image.onload = function() {
+       cx.drawImage(image, 0, 0, canvas.width, canvas.height);
+     };
+// 이미지 로딩 시작
+     image.src = "img.jpg";
+</script>
+
 </body>
 </html>
